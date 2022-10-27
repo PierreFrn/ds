@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Mar  1 16:49:29 2022" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="ct_top" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="switch0" SIGIS="undef" SIGNAME="External_Ports_switch0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ct" PORT="switch0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="wire_in" SIGIS="undef" SIGNAME="External_Ports_wire_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ct" PORT="wire_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="wire_out" SIGIS="undef" SIGNAME="ct_wire_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ct" PORT="wire_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="ct_led">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ct" PORT="led"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/ct" HWVERSION="1.0" INSTANCE="ct" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ct" VLNV="www.telecom-paris.fr:DS:ct:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ct_top_ct_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="switch0" SIGIS="undef" SIGNAME="External_Ports_switch0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="switch0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="wire_in" SIGIS="undef" SIGNAME="External_Ports_wire_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wire_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="wire_out" SIGIS="undef" SIGNAME="ct_wire_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wire_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="ct_led">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="led"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

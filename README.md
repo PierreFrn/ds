@@ -20,41 +20,91 @@ Digital Systems labs
 
 # Homeworks
 
-<!--
-* For 2022-03-29
-  - Edit the `/status1.md` file and fill the [first intermediate status check-list]
--->
-* For 2022-03-22
-  - Read chapter 5 of the [Free Range Factory] VHDL book
-  - If you didn't already, read the following parts of the documentation:
-    * [Generic parameters]
-    * [Aggregate notations]
-    * [Resolution functions, unresolved and resolved types]
-    * [Arithmetic: which types to use?]
-    * [Entity instantiations]
-  - Complete the 4 first labs, including synthesis and test on the Zybo
-  - Read the [DHT11 sensor datasheet]
-* For 2022-03-15
-  - Complete [lab01](vhdl/lab01) and [lab02](vhdl/lab02)
-  - Continue learning git and Markdown ([ProGit book], [Daring Fireball], [Markdown tutorial]).
-  - Read chapter 4 of the [Free Range Factory] VHDL book
-  - Read the following parts of the documentation:
-    * [Comments]
-    * [Identifiers]
-    * [Wait]
-    * [Initial values declarations]
-    * [D-flip-flops (DFF) and latches]
-* For 2022-03-08
-  - Learn a bit of `git` ([ProGit book]). Watch the videos. Try to imagine a work flow with a protected master branch and one branch per student.
-  - Learn a bit of Markdown ([Daring Fireball], [Markdown tutorial]).
-  - Read the [Getting started with VHDL] section of the documentation. Prepare questions.
-  - Read the [Digital hardware design using VHDL in a nutshell] section of the documentation. Prepare questions.
-  - Read the [VHDL simulation] section of the documentation. Prepare questions.
-  - Read the first three chapters of the [Free Range Factory] VHDL book.
-  - Solve all technical issues
-    * If you use your own laptop, be able to ssh to a EURECOM GNU/Linux computer in room 52 (for the syntheses).
-    * Be able to git clone the GitLab project on your personal computer and/or a EURECOM GNU/Linux computer, create your personal branch, and push it; [GitLab and git set-up](#gitlab-and-git-set-up).
-    * Be able to compile and simulate an example design, examine the wavefoms; see [VHDL simulation].
+## For 2021-04-26
+
+- Finish reading the [Free Range Factory] VHDL book
+- Complete the lab on the [Linux device driver for the DHT11 controller](vhdl/lab09)
+   * Generate and compile the device tree
+   * Configure and compile the Linux kernel
+   * Understand and adapt the provided Linux driver and example software application
+   * Compile the Linux driver and the example software application
+   * Test on the Zybo board
+   * Write your report
+- Read again the specifications of the lite version of the [AXI4 lite protocol] and imagine how a hardware accelerator could act as a master to directly access the memory of a computer system.
+- Edit the `/status3.md` file and fill the [third intermediate status check-list]
+
+## For 2021-04-12
+
+- Read chapters 8 to 9 of the [Free Range Factory] VHDL book
+- Read the following parts of the documentation:
+  * [Examining synthesis results]
+- Complete the AXI4 lite wrapper for the `dht11_ctrl` controller:
+  * Block diagram
+  * State diagrams
+  * VHDL coding
+  * Simulation, debugging, pass automatic evaluation
+  * Synthesis and test on the Zybo
+- Edit the `/status2.md` file and fill the [second intermediate status check-list]
+
+## For 2022-04-05
+
+- Read chapters 6 to 7 of the [Free Range Factory] VHDL book
+- Read the following parts of the documentation:
+  * [Unconstrained types]
+  * [Recursivity]
+  * [Protected types]
+  * [Random numbers generation]
+- Complete all pending items in [first intermediate status check-list]
+- Complete the DHT11 controller
+  * Block diagram
+  * State diagram
+  * VHDL coding
+  * Simulation, debugging, pass automatic evaluation
+  * Synthesis and test on the Zybo
+- Study the [AXI4 lite protocol specification]
+
+## For 2022-03-29
+
+- Complete all challenges, including synthesis and test on the Zybo
+- Continue working on the block and state diagrams for the DHT11 controller
+- Edit the `/status1.md` file and fill the [first intermediate status check-list]
+
+## For 2022-03-22
+
+- Read chapter 5 of the [Free Range Factory] VHDL book
+- If you didn't already, read the following parts of the documentation:
+  * [Generic parameters]
+  * [Aggregate notations]
+  * [Resolution functions, unresolved and resolved types]
+  * [Arithmetic: which types to use?]
+  * [Entity instantiations]
+- Complete the 4 first labs, including synthesis and test on the Zybo
+- Read the [DHT11 sensor datasheet]
+
+## For 2022-03-15
+
+- Complete [lab01](vhdl/lab01) and [lab02](vhdl/lab02)
+- Continue learning git and Markdown ([ProGit book], [Daring Fireball], [Markdown tutorial]).
+- Read chapter 4 of the [Free Range Factory] VHDL book
+- Read the following parts of the documentation:
+  * [Comments]
+  * [Identifiers]
+  * [Wait]
+  * [Initial values declarations]
+  * [D-flip-flops (DFF) and latches]
+
+## For 2022-03-08
+
+- Learn a bit of `git` ([ProGit book]). Watch the videos. Try to imagine a work flow with a protected master branch and one branch per student.
+- Learn a bit of Markdown ([Daring Fireball], [Markdown tutorial]).
+- Read the [Getting started with VHDL] section of the documentation. Prepare questions.
+- Read the [Digital hardware design using VHDL in a nutshell] section of the documentation. Prepare questions.
+- Read the [VHDL simulation] section of the documentation. Prepare questions.
+- Read the first three chapters of the [Free Range Factory] VHDL book.
+- Solve all technical issues
+  * If you use your own laptop, be able to ssh to a EURECOM GNU/Linux computer in room 52 (for the syntheses).
+  * Be able to git clone the GitLab project on your personal computer and/or a EURECOM GNU/Linux computer, create your personal branch, and push it; [GitLab and git set-up](#gitlab-and-git-set-up).
+  * Be able to compile and simulate an example design, examine the waveforms; see [VHDL simulation].
 
 # Recommendations
 
@@ -72,7 +122,7 @@ Knowing a bit of the C programming language, while not needed, can help.
 ## Keep the git repository clean
 
 Remember that we all share the same git repository, reason why it is important to keep it reasonably clean.
-To avoid a too fast growing of the size of the repository, please:
+To avoid a too fast grow of the size of the repository, please:
 
 * Avoid adding full directories; it is sometimes convenient but also the best way to add a large number of large generated files that we do not want in the repository; try to `git add` only individual files, and only files that make sense (source files, reports in Mardown format, carefully selected images used in reports...).
 * Try to use the right resolution for the (carefully selected) images that you add.
@@ -111,7 +161,7 @@ Abort and add your SSH key.
 * The master branch is protected and will be used to provide instructions for the labs, code templates, documentation...
 Never work in the master branch.
 Create your personal branch instead.
-Name it `Firstname.Lastname` where `Firstname` is your first name (or a part of it) and `Lastname` is your last name (or a part of it); please do not use pseudos or other fancy names, it is important that a branch owner is easily identigied from the branch name.
+Name it `Firstname.Lastname` where `Firstname` is your first name (or a part of it) and `Lastname` is your last name (or a part of it); please do not use pseudos or other fancy names, it is important that a branch owner is easily identified from the branch name.
 Switch to your personal branch, push it to the `origin` remote and declare that the local branch will track the remote one, such that you will not have to specify the remote any more when pushing or pulling:
 
     ```bash
@@ -361,6 +411,14 @@ However, there is an experimental VHDL synthesis feature in GHDL based on Yosys.
 [Resolution functions, unresolved and resolved types]: doc/data/resolution-functions-unresolved-and-resolved-types.md
 [Arithmetic: which types to use?]: doc/data/arithmetic-which-types-to-use.md
 [Entity instantiations]: doc/data/entity-instantiations.md
+[Unconstrained types]: doc/data/unconstrained-types.md
+[Recursivity]: doc/data/recursivity.md
+[Protected types]: doc/data/protected-types.md
+[Random numbers generation]: doc/data/random-numbers-generation.md
 [DHT11 sensor datasheet]: doc/data/DHT11.pdf
+[first intermediate status check-list]: status1.md
+[second intermediate status check-list]: status2.md
+[third intermediate status check-list]: status3.md
+[AXI4 lite protocol specification]: doc/data/axi.pdf
 
-<!-- vim: set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab textwidth=0: -->
+<!-- vim: set tabstop=4 softtabstop=4 shiftwidth=4 expandtab textwidth=0: -->

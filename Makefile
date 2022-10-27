@@ -67,8 +67,8 @@ else
 $(error invalid V value: $(V))
 endif
 
-# 'make' is the same as 'make short-help'
-.DEFAULT_GOAL	:= short-help
+# 'make' is the same as 'make help'
+.DEFAULT_GOAL	:= help
 
 .PHONY: clean
 clean:
@@ -88,7 +88,7 @@ ifneq ($(PASS),run)
 # second make invocation (in $(DIR))
 else
 
-.PHONY: short-help help list lib all
+.PHONY: help long-help list lib all
 
 # all VHDL source files under $(VHDL)
 SRC			:= $(patsubst $(VHDL)/%,%,$(shell find -L $(VHDL) -type f,l -name '*.vhd'))
@@ -161,7 +161,7 @@ else
 $(error "$(SIM): invalid SIM value")
 endif
 
-define SHORT_HELP_message
+define HELP_message
 Usage:
     make [VARIABLE=VALUE ...] GOAL
 
@@ -178,8 +178,8 @@ Variable  domain             description (default)
     V     {0,1}              verbosity level ($(V))
 
 Goals:
-    short-help     print this short help message (default goal)
-    help           print the long help message
+    help           print this short help message (default goal)
+    long-help      print the long help message
     lib            print the list of libraries and their associated directory
     NAME           compile VHDL source file NAME.vhd
     list           print list of all existing NAMEs not in SKIP
@@ -187,7 +187,7 @@ Goals:
     NAME.sim       simulate entity NAME
     clean          delete temporary compilation and simulation directory
 endef
-export SHORT_HELP_message
+export HELP_message
 
 define LONG_HELP_message
 
@@ -264,11 +264,11 @@ constructs to the local.mk (or to other .mk files).
 endef
 export LONG_HELP_message
 
-short-help::
-	@echo "$$SHORT_HELP_message"
-
 help::
-	@echo "$$SHORT_HELP_message"
+	@echo "$$HELP_message"
+
+long-help::
+	@echo "$$HELP_message"
 	@echo "$$LONG_HELP_message"
 
 lib:

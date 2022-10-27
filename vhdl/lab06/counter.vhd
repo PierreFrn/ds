@@ -26,9 +26,10 @@ architecture rtl of counter is
       elsif cz then
         c <= 0;
       elsif c /= cmax then
-        c <= c + 1;
+      	if inc then
+          c <= c + 1;
+        end if;
       end if;
     end if;
   end process;
-
 end architecture rtl;

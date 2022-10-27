@@ -10,7 +10,7 @@
 # http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.txt
 #
 
-set board [get_board_parts digilentinc.com:zybo*]
+set board [get_board_parts digilentinc.com:zybo:part0:1.0]
 set part xc7z010clg400-1
 
 proc usage {} {

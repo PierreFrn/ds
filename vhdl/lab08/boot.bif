@@ -1,0 +1,6 @@
+all:
+{
+  [bootloader]fsbl.elf
+  dht11_ctrl_axi_wrapper.bit
+  u-boot.elf
+}

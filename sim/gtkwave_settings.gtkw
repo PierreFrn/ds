@@ -1,0 +1,52 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue Mar 29 14:23:45 2022
+[*]
+[dumpfile] "/tmp/fournipi/ds/vsim/dht11_ctrl_sim.ghw"
+[dumpfile_mtime] "Tue Mar 29 14:22:25 2022"
+[dumpfile_size] 160436
+[savefile] "/homes/fournipi/ds/sim/gtkwave_settings.gtkw"
+[timestart] 0
+[size] 1920 956
+[pos] -51 -51
+*-40.026775 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.dht11_ctrl_sim.
+[treeopen] top.dht11_ctrl_sim.u_dht11_ctrl.
+[sst_width] 233
+[signals_width] 142
+[sst_expanded] 1
+[sst_vpaned_height] 268
+@420
+top.dht11_ctrl_sim.u_dht11_ctrl.timer_save
+top.dht11_ctrl_sim.u_dht11_ctrl.next_state
+top.dht11_ctrl_sim.u_dht11_ctrl.state
+@28
+top.dht11_ctrl_sim.u_dht11_ctrl.fe
+top.dht11_ctrl_sim.u_dht11_ctrl.re
+@420
+top.dht11_ctrl_sim.u_dht11_ctrl.c
+@28
+top.dht11_ctrl_sim.u_dht11_ctrl.cz
+top.dht11_ctrl_sim.u_dht11_ctrl.inc
+@420
+top.dht11_ctrl_sim.u_dht11_ctrl.t
+@28
+top.dht11_ctrl_sim.u_dht11_ctrl.tz
+top.dht11_ctrl_sim.u_dht11_ctrl.data_sync
+top.dht11_ctrl_sim.u_dht11_ctrl.shift
+top.dht11_ctrl_sim.u_dht11_ctrl.cerr
+top.dht11_ctrl_sim.u_dht11_ctrl.dso
+top.dht11_ctrl_sim.u_dht11_ctrl.force0
+top.dht11_ctrl_sim.u_dht11_ctrl.data_in
+top.dht11_ctrl_sim.u_dht11_ctrl.sresetn
+top.dht11_ctrl_sim.u_dht11_ctrl.clk
+@25
+#{top.dht11_ctrl_sim.tp[7:0]} top.dht11_ctrl_sim.tp[7] top.dht11_ctrl_sim.tp[6] top.dht11_ctrl_sim.tp[5] top.dht11_ctrl_sim.tp[4] top.dht11_ctrl_sim.tp[3] top.dht11_ctrl_sim.tp[2] top.dht11_ctrl_sim.tp[1] top.dht11_ctrl_sim.tp[0]
+@24
+#{top.dht11_ctrl_sim.rh[7:0]} top.dht11_ctrl_sim.rh[7] top.dht11_ctrl_sim.rh[6] top.dht11_ctrl_sim.rh[5] top.dht11_ctrl_sim.rh[4] top.dht11_ctrl_sim.rh[3] top.dht11_ctrl_sim.rh[2] top.dht11_ctrl_sim.rh[1] top.dht11_ctrl_sim.rh[0]
+#{top.dht11_ctrl_sim.u_dht11_ctrl.cs[7:0]} top.dht11_ctrl_sim.u_dht11_ctrl.cs[7] top.dht11_ctrl_sim.u_dht11_ctrl.cs[6] top.dht11_ctrl_sim.u_dht11_ctrl.cs[5] top.dht11_ctrl_sim.u_dht11_ctrl.cs[4] top.dht11_ctrl_sim.u_dht11_ctrl.cs[3] top.dht11_ctrl_sim.u_dht11_ctrl.cs[2] top.dht11_ctrl_sim.u_dht11_ctrl.cs[1] top.dht11_ctrl_sim.u_dht11_ctrl.cs[0]
+@28
+#{top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[23:0]} top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[23] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[22] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[21] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[20] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[19] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[18] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[17] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[16] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[15] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[14] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[13] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[12] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[11] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[10] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[9] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[8] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[7] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[6] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[5] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[4] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[3] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[2] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[1] top.dht11_ctrl_sim.u_dht11_ctrl.reg_data[0]
+[pattern_trace] 1
+[pattern_trace] 0

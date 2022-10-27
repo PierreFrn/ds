@@ -1,0 +1,25 @@
+v 4
+file . "../vhdl/lab05/edge_sim.vhd" "b4433715abda492224f6f2c557f5856c9a97aa9b" "20220322133448.290":
+  entity edge_sim at 13( 433) + 0 on 69;
+  architecture sim of edge_sim at 19( 558) + 0 on 70;
+file . "../vhdl/lab05/edge.vhd" "ab1a45c45da7b1031c5985eb5849ec4b1b9fee12" "20220322133448.284":
+  entity edge at 1( 0) + 0 on 67;
+  architecture rtl of edge at 15( 257) + 0 on 68;
+file . "../vhdl/lab03/timer_sim.vhd" "9fc5e34b03d21d55ad66cf2004a763e3b1d6956f" "20220315134015.267":
+  entity timer_sim at 13( 433) + 0 on 41;
+  architecture sim of timer_sim at 21( 675) + 0 on 42;
+file . "../vhdl/lab03/timer.vhd" "f2565efe0e5e9525355acd05b45ebe00aee7ed44" "20220315134015.264":
+  entity timer at 1( 0) + 0 on 39;
+  architecture rtl of timer at 18( 331) + 0 on 40;
+file . "../vhdl/lab01/ct_sim.vhd" "11a25c47182a4ef99a3c5eb3a9b637a3a2e56b70" "20220308135138.131":
+  entity ct_sim at 1( 0) + 0 on 13;
+  architecture sim of ct_sim at 10( 136) + 0 on 14;
+file . "../vhdl/lab01/ct.vhd" "92f78c210b3c2139af877dc20a05357007a9003d" "20220301152312.428":
+  entity ct at 1( 0) + 0 on 11;
+  architecture rtl of ct at 10( 160) + 0 on 12;
+file . "../vhdl/lab02/sr.vhd" "6108562f7831adf55013970c71157d6245ef0913" "20220308151457.034":
+  entity sr at 1( 0) + 0 on 23;
+  architecture rtl of sr at 19( 331) + 0 on 24;
+file . "../vhdl/lab02/sr_sim.vhd" "e77a79141bbae80f4ecab5bb3c989d78eba1f257" "20220308151457.039":
+  entity sr_sim at 15( 547) + 0 on 25;
+  architecture sim of sr_sim at 20( 685) + 0 on 26;
