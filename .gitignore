@@ -1,0 +1,12 @@
+*~
+.*.swp
+*.o
+boot.bin
+command.log
+vivado*.jou
+vivado*.log
+webtalk.jou
+webtalk.log
+*.fig.bak
+.DS_Store
+!/software/boot.bin

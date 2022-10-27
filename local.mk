@@ -1,0 +1,2 @@
+SIM := ghdl
+GUI := yes

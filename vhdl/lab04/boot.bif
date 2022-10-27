@@ -1,0 +1,6 @@
+all:
+{
+  [bootloader]fsbl.elf
+  lb.bit
+  u-boot.elf
+}
