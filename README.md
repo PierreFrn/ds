@@ -14,7 +14,29 @@ Digital Systems labs
 
 ---
 
-[TOC]
+- [Homeworks](#homeworks)
+  * [For 2021-04-26](#for-2021-04-26)
+  * [For 2021-04-12](#for-2021-04-12)
+  * [For 2022-04-05](#for-2022-04-05)
+  * [For 2022-03-29](#for-2022-03-29)
+  * [For 2022-03-22](#for-2022-03-22)
+  * [For 2022-03-15](#for-2022-03-15)
+  * [For 2022-03-08](#for-2022-03-08)
+- [Recommendations](#recommendations)
+  * [Keep the git repository clean](#keep-the-git-repository-clean)
+  * [Carefully check the synthesis results](#carefully-check-the-synthesis-results)
+  * [Miscellaneous](#miscellaneous)
+- [GitLab and git set-up](#gitlab-and-git-set-up)
+- [Tools](#tools)
+  * [The VHDL synthesizer](#the-vhdl-synthesizer)
+  * [The VHDL simulator](#the-vhdl-simulator)
+  * [Installing Vivado WebPack](#installing-vivado-webpack)
+    + [Troubleshooting](#troubleshooting)
+  * [Installing Modelsim-Intel FPGA starter edition software](#installing-modelsim-intel-fpga-starter-edition-software)
+    + [Troubleshooting](#troubleshooting-1)
+  * [Free and open source hardware design tools](#free-and-open-source-hardware-design-tools)
+    + [VHDL simulation](#vhdl-simulation)
+    + [VHDL synthesis](#vhdl-synthesis)
 
 ---
 
@@ -188,7 +210,7 @@ As you declared that your personal local branch tracks the remote one, there is 
 The course makes use of two types of tools: a VHDL simulator and a VHDL synthesizer.
 The VHDL simulator allows to exercise your VHDL code, find bugs and fix them.
 The VHDL synthesizer translates your VHDL code into a binary bitsream that you then use to reconfigure the FPGA circuit of the prototyping board.
- 
+
 If you want or must work on your own personal computer you will need to get access to these tools.
 We will first look at commercial (but free) tools.
 At the end of this chapter you will find some notes about free and open source alternatives.

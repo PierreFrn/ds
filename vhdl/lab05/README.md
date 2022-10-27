@@ -15,7 +15,12 @@ Lab: a 3-stages re-synchronizer-edges-detector
 
 ---
 
-[TOC]
+- [CODING CHALLENGE: 3-stages re-synchronizer and edges detector (20 minutes)](#coding-challenge--3-stages-re-synchronizer-and-edges-detector--20-minutes-)
+  * [Specifications](#specifications)
+  * [Schematic](#schematic)
+  * [VHDL coding](#vhdl-coding)
+  * [Validation](#validation)
+  * [Peer review](#peer-review)
 
 ---
 

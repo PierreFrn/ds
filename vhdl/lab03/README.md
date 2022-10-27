@@ -15,7 +15,13 @@ Lab: a timer
 
 ---
 
-[TOC]
+- [Learn a bit more of the VHDL language](#learn-a-bit-more-of-the-vhdl-language)
+- [CODING CHALLENGE: a timer (30 minutes)](#coding-challenge--a-timer--30-minutes-)
+  * [Specifications](#specifications)
+  * [Schematic](#schematic)
+  * [VHDL coding](#vhdl-coding)
+  * [Validation](#validation)
+  * [Peer review](#peer-review)
 
 ---
 

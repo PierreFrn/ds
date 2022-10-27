@@ -14,7 +14,24 @@ Frequently asked questions
 
 ---
 
-[TOC]
+- [Tools (GHDL, GTKWave, Modelsim, Vivado)](#tools--ghdl--gtkwave--modelsim--vivado-)
+  * [How can I install GHDL and GTKWave under macOS, and use them to simulate my VHDL model?](#how-can-i-install-ghdl-and-gtkwave-under-macos--and-use-them-to-simulate-my-vhdl-model-)
+  * [I am not comfortable with the Command Line Interface (CLI), is there a way to compile and simulate with a Graphical User Interface (GUI)?](#i-am-not-comfortable-with-the-command-line-interface--cli---is-there-a-way-to-compile-and-simulate-with-a-graphical-user-interface--gui--)
+  * [When trying to compile/simulate/synthesize I get a `command not found` error, why?](#when-trying-to-compile-simulate-synthesize-i-get-a--command-not-found--error--why-)
+  * [Why do I get `CRITICAL WARNING: [IP_Flow 19-5655]` when synthesizing my design with Vivado?](#why-do-i-get--critical-warning---ip-flow-19-5655---when-synthesizing-my-design-with-vivado-)
+  * [Why do I get `ERROR: [DRC UCIO-1] Unconstrained Logical Port` when synthesizing my design with Vivado?](#why-do-i-get--error---drc-ucio-1--unconstrained-logical-port--when-synthesizing-my-design-with-vivado-)
+  * [Why do I get `ERROR: [DRC NSTD-1] Unspecified I/O Standard` when synthesizing my design with Vivado?](#why-do-i-get--error---drc-nstd-1--unspecified-i-o-standard--when-synthesizing-my-design-with-vivado-)
+- [How to generate a `ssh` key pair?](#how-to-generate-a--ssh--key-pair-)
+- [The `git` server asks for a password, how can I avoid this?](#the--git--server-asks-for-a-password--how-can-i-avoid-this-)
+- [The VHDL language](#the-vhdl-language)
+  * [I got a compilation error about wait statement and sensitivity list, what does it mean?](#i-got-a-compilation-error-about-wait-statement-and-sensitivity-list--what-does-it-mean-)
+- [Terminal emulators](#terminal-emulators)
+  * [What is a terminal emulator?](#what-is-a-terminal-emulator-)
+  * [What terminal emulator can I use?](#what-terminal-emulator-can-i-use-)
+  * [How can I know which logical device on my computer corresponds to the Zybo board?](#how-can-i-know-which-logical-device-on-my-computer-corresponds-to-the-zybo-board-)
+  * [How can I attach the terminal emulator to the logical device of the Zybo board?](#how-can-i-attach-the-terminal-emulator-to-the-logical-device-of-the-zybo-board-)
+- [The DHT11 sensor](#the-dht11-sensor)
+  * [I saw an Arduino software library for the DHT11 sensor, does it mean that Arduino boards have a hardware interface like the one we designed?](#i-saw-an-arduino-software-library-for-the-dht11-sensor--does-it-mean-that-arduino-boards-have-a-hardware-interface-like-the-one-we-designed-)
 
 ---
 
@@ -116,8 +133,8 @@ For this course I suggest that you generate a dedicated key pair and don't prote
 ```bash
 john@mylaptop> ssh-keygen -t rsa -f ~/.ssh/gitlab
 Generating public/private rsa key pair.
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
 Your identification has been saved in /home/john/.ssh/gitlab
 Your public key has been saved in /home/john/.ssh/gitlab.pub
 The key fingerprint is:
@@ -291,7 +308,7 @@ $ picocom -b115200 /dev/cu.usbserial-210279A42E221
 ...
 Welcome to DS (c) Telecom Paris
 ds login: root
-root@ds> 
+root@ds>
 ```
 
 Note: the `-b115200` option of `picocom` specifies which baud rate to use (115200 symbols/s in our case).
@@ -304,7 +321,7 @@ $ picocom -b115200 /dev/ttyUSB1
 ...
 Welcome to DS (c) Telecom Paris
 ds login: root
-root@ds> 
+root@ds>
 ```
 
 Note: under GNU/Linux if you get an error message about permissions you probably need to change the permissions of the device file which is, by default, mounted read/write for the root user only.

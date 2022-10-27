@@ -15,7 +15,12 @@ Lab: a counter
 
 ---
 
-[TOC]
+- [CODING CHALLENGE: counter (30 minutes)](#coding-challenge--counter--30-minutes-)
+  * [Specifications](#specifications)
+  * [Schematic](#schematic)
+  * [VHDL coding](#vhdl-coding)
+  * [Validation](#validation)
+  * [Peer review](#peer-review)
 
 ---
 

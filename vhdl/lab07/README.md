@@ -15,7 +15,20 @@ Lab: the DHT11 controller
 
 ---
 
-[TOC]
+- [Overview](#overview)
+- [Learn a bit more of digital hardware design](#learn-a-bit-more-of-digital-hardware-design)
+- [The one-bit communication protocol](#the-one-bit-communication-protocol)
+- [Design of the DHT11 controller](#design-of-the-dht11-controller)
+  * [Interface specification](#interface-specification)
+  * [Detailed specifications](#detailed-specifications)
+  * [Block diagram](#block-diagram)
+  * [Learn a bit more of digital hardware design](#learn-a-bit-more-of-digital-hardware-design-1)
+  * [State diagram](#state-diagram)
+  * [VHDL coding](#vhdl-coding)
+  * [Validation](#validation)
+  * [Peer review](#peer-review)
+  * [Synthesis](#synthesis)
+  * [Test](#test)
 
 ---
 

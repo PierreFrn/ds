@@ -15,7 +15,21 @@ Lab: a AXI4 lite wrapper for the DHT11 controller
 
 ---
 
-[TOC]
+- [Learn a bit more of the VHDL language](#learn-a-bit-more-of-the-vhdl-language)
+- [The AXI4 protocol (discussion)](#the-axi4-protocol--discussion-)
+- [A AXI4 lite wrapper for the DHT11 controller](#a-axi4-lite-wrapper-for-the-dht11-controller)
+  * [Introduction](#introduction)
+  * [Interface](#interface)
+  * [Detailed specifications](#detailed-specifications)
+    + [DHT11 controller, tri-state buffer, registers, LEDs](#dht11-controller--tri-state-buffer--registers--leds)
+    + [AXI4 lite machinery](#axi4-lite-machinery)
+  * [Block diagram](#block-diagram)
+  * [State diagram](#state-diagram)
+  * [VHDL coding](#vhdl-coding)
+  * [Validation](#validation)
+  * [Peer review](#peer-review)
+  * [Synthesis](#synthesis)
+  * [Test](#test)
 
 ---
 

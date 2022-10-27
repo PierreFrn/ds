@@ -15,7 +15,14 @@ Hardware/software integration: a Linux software driver for the DHT11 controller
 
 ---
 
-[TOC]
+- [Conventions and requirements](#conventions-and-requirements)
+- [Introduction](#introduction)
+- [Environment set-up](#environment-set-up)
+- [Device tree](#device-tree)
+- [Linux kernel](#linux-kernel)
+- [DHT11 Linux driver](#dht11-linux-driver)
+- [Prepare the SD card](#prepare-the-sd-card)
+- [Testing](#testing)
 
 ---
 
@@ -340,7 +347,7 @@ Host> picocom -b115200 /dev/zyboUSB
 ...
 Welcome to DS (c) Telecom Paris
 ds login: root
-[root@ds]> 
+[root@ds]>
 ```
 
 You are now connected as the `root` user under the GNU/Linux OS that runs on the Zynq core of the Zybo board.
@@ -399,7 +406,7 @@ Or to write to it.
 Run the software application:
 
 ```bash
-[root@ds]> /media/sdcard/test_dht11_driver 
+[root@ds]> /media/sdcard/test_dht11_driver
 Last successful acquisition:
   Relative humidity: 56%
   Temperature:       26 °C
@@ -423,7 +430,7 @@ ds login: user
 [user@ds]> od -N4 -tu1 /dev/dht11
 0000000  27  54   0 128
 0000004
-[user@ds] /media/sdcard/test_dht11_driver 
+[user@ds] /media/sdcard/test_dht11_driver
 Last successful acquisition:
   Relative humidity: 54%
   Temperature:       27%

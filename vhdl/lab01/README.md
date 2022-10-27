@@ -14,7 +14,25 @@ Lab: get a Zybo board, learn about digital hardware, design a continuity tester
 
 ---
 
-[TOC]
+- [Get a Zybo prototyping board](#get-a-zybo-prototyping-board)
+- [Introduction to digital hardware, FPGAs, VHDL (discussion)](#introduction-to-digital-hardware--fpgas--vhdl--discussion-)
+- [Environment set-up for VHDL compilation and simulation](#environment-set-up-for-vhdl-compilation-and-simulation)
+  * [Using shell variables to simplify the typing](#using-shell-variables-to-simplify-the-typing)
+  * [Simulating out of source tree](#simulating-out-of-source-tree)
+- [Write our first VHDL model: a continuity tester for our jumper wires](#write-our-first-vhdl-model--a-continuity-tester-for-our-jumper-wires)
+  * [Interface](#interface)
+  * [Architecture](#architecture)
+  * [Compilation](#compilation)
+- [More about Hardware Description Languages (HDL) (discussion)](#more-about-hardware-description-languages--hdl---discussion-)
+- [Write our second VHDL model: a simulation environment for our continuity tester](#write-our-second-vhdl-model--a-simulation-environment-for-our-continuity-tester)
+- [Compile and simulate your design](#compile-and-simulate-your-design)
+- [Automatic evaluation and peer review](#automatic-evaluation-and-peer-review)
+- [Logic synthesis](#logic-synthesis)
+  * [Synthesizing out of source tree](#synthesizing-out-of-source-tree)
+  * [Map the inputs and outputs of our VHDL model to input and output pins of the Zynq core](#map-the-inputs-and-outputs-of-our-vhdl-model-to-input-and-output-pins-of-the-zynq-core)
+  * [Synthesize the continuity tester](#synthesize-the-continuity-tester)
+- [Test your design (and your wire) on the Zybo](#test-your-design--and-your-wire--on-the-zybo)
+- [Report, add-commit-push](#report--add-commit-push)
 
 ---
 

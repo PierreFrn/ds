@@ -15,7 +15,15 @@ Lab: a LED blinker
 
 ---
 
-[TOC]
+- [Learn a bit more of digital hardware design](#learn-a-bit-more-of-digital-hardware-design)
+- [Learn a bit more of the VHDL language](#learn-a-bit-more-of-the-vhdl-language)
+- [CODING CHALLENGE: a LED blinker (45 minutes)](#coding-challenge--a-led-blinker--45-minutes-)
+  * [Specifications](#specifications)
+  * [Schematic](#schematic)
+  * [VHDL coding](#vhdl-coding)
+  * [Validation](#validation)
+  * [Peer review](#peer-review)
+  * [Logic synthesis and test on the Zybo](#logic-synthesis-and-test-on-the-zybo)
 
 ---
 
@@ -189,7 +197,7 @@ If there were no synthesis errors or serious warnings, if the resource utilizati
 $ cd "$syn"
 $ cp "$ds/software/fsbl.elf" .
 $ cp "$ds/software/u-boot.elf" .
-$ bootgen -w -image "$ds/vhdl/lab04/boot.bif" -o boot.bin 
+$ bootgen -w -image "$ds/vhdl/lab04/boot.bif" -o boot.bin
 ```
 
 The result is a *boot image*: `boot.bin`.

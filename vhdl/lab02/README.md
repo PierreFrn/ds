@@ -15,7 +15,16 @@ Lab: a shift register
 
 ---
 
-[TOC]
+- [Introduction](#introduction)
+- [Learn a bit more of the VHDL language](#learn-a-bit-more-of-the-vhdl-language)
+- [Environment set-up](#environment-set-up)
+- [CODING CHALLENGE: a shift register (30 minutes)](#coding-challenge--a-shift-register--30-minutes-)
+  * [Interface](#interface)
+  * [Architecture](#architecture)
+  * [Validation](#validation)
+  * [Peer review](#peer-review)
+- [Explore the simulation waveforms in delta mode](#explore-the-simulation-waveforms-in-delta-mode)
+
 
 ---
 
@@ -82,13 +91,13 @@ Add an entity named `sr` (for Shift Register) with the following generic paramet
 
 And the following input-output ports:
 
-| Name      | Type                              | Direction | Description                                                                | 
-| :----     | :----                             | :----     | :----                                                                      | 
-| `clk`     | `std_ulogic`                      | in        | master clock, the design is synchronized on the **rising** edge of `clk`   | 
-| `sresetn` | `std_ulogic`                      | in        | **synchronous**, active **low** reset                                      | 
-| `shift`   | `std_ulogic`                      | in        | shift command, the register shifts when `shift` is asserted **high**       | 
-| `din`     | `std_ulogic`                      | in        | serial input of the shift register                                         | 
-| `dout`    | `std_ulogic_vector(n-1 downto 0)` | out       | current value of the shift register (parallel output)                      | 
+| Name      | Type                              | Direction | Description                                                                |
+| :----     | :----                             | :----     | :----                                                                      |
+| `clk`     | `std_ulogic`                      | in        | master clock, the design is synchronized on the **rising** edge of `clk`   |
+| `sresetn` | `std_ulogic`                      | in        | **synchronous**, active **low** reset                                      |
+| `shift`   | `std_ulogic`                      | in        | shift command, the register shifts when `shift` is asserted **high**       |
+| `din`     | `std_ulogic`                      | in        | serial input of the shift register                                         |
+| `dout`    | `std_ulogic_vector(n-1 downto 0)` | out       | current value of the shift register (parallel output)                      |
 
 ## Architecture
 
